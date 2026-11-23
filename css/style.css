@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+:root{--ink:#17233d;--muted:#6c7890;--blue:#315bea;--blue-dark:#1d3fc0;--pale:#f3f6ff;--line:#e6eaf3;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:'DM Sans',sans-serif;color:var(--ink);background:#fff;line-height:1.7}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,90%);margin:auto}
+.site-header{height:78px;position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(230,234,243,.8)}
+.nav,.nav-links,.hero-actions,.hero-meta,.footer-inner{display:flex;align-items:center}
+.nav{height:100%;justify-content:space-between}
+.brand{font:800 23px 'Plus Jakarta Sans',sans-serif;letter-spacing:-1px;display:inline-flex;align-items:center;gap:8px}
+.brand-mark{display:grid;place-items:center;width:32px;height:32px;background:var(--blue);color:white;border-radius:10px;font-size:17px}
+.brand-dot,.section-heading h2 span,.contact h2 span{color:var(--blue)}
+.nav-links{gap:34px;color:#536078;font-size:14px;font-weight:600}
+.nav-links a:hover{color:var(--blue)}
+.menu-toggle{display:none;border:0;background:none;font-size:25px;color:var(--ink)}
+.section{padding:105px 0}
+.hero{padding:76px 0 95px;overflow:hidden;background:radial-gradient(circle at 85% 45%,#eef2ff 0,transparent 32%),linear-gradient(180deg,#fff,#fbfcff)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:55px}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;color:var(--blue);display:inline-flex;align-items:center;gap:9px}
+.status-dot{width:7px;height:7px;background:#27b77a;border-radius:50%;box-shadow:0 0 0 4px #dff8ed}
+.intro{font-size:19px;color:var(--muted);margin-top:25px}
+h1,h2,h3{font-family:'Plus Jakarta Sans',sans-serif;line-height:1.2}
+h1{font-size:clamp(44px,6vw,70px);letter-spacing:-3px;margin:7px 0 12px}
+h1 span,.skills h2 span{color:var(--blue)}
+.hero-copy h2{font-size:18px;color:#43516b;font-weight:700}
+.hero-text{max-width:520px;color:var(--muted);margin:20px 0 27px;font-size:15px}
+.hero-actions{gap:13px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:15px;padding:13px 20px;border-radius:9px;font-size:13px;font-weight:700;transition:.2s}
+.btn-primary{background:var(--blue);color:white;box-shadow:0 9px 22px #315bea35}
+.btn-primary:hover{background:var(--blue-dark);transform:translateY(-2px)}
+.btn-outline{border:1px solid #d8deeb;background:white}
+.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
+.hero-meta{gap:34px;margin-top:47px;padding-top:22px;border-top:1px solid var(--line);max-width:480px}
+.hero-meta div{display:grid;gap:2px}
+.hero-meta strong{font:700 15px 'Plus Jakarta Sans'}
+.hero-meta span{font-size:11px;color:var(--muted)}
+.hero-visual{min-height:490px;position:relative;display:grid;place-items:center}
+.photo-backdrop{position:absolute;width:390px;height:390px;border-radius:48% 52% 45% 55%;background:linear-gradient(145deg,#dce5ff,#aebfff);transform:rotate(-9deg)}
+.photo-frame{position:relative;width:330px;height:430px;border:9px solid white;border-radius:180px 180px 25px 25px;overflow:hidden;box-shadow:0 24px 60px #203b8525;background:#e9edfa}
+.photo-frame img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.floating-card{position:absolute;bottom:42px;left:0;background:white;padding:13px 17px;border-radius:13px;box-shadow:0 12px 35px #1b2b501c;display:flex;align-items:center;gap:11px}
+.spark{display:grid;place-items:center;background:#edf1ff;color:var(--blue);width:36px;height:36px;border-radius:10px;font-size:20px}
+.floating-card div{display:grid}.floating-card strong{font-size:12px}.floating-card small{font-size:10px;color:var(--muted)}
+.circle-note{position:absolute;right:0;top:55px;width:83px;height:83px;border-radius:50%;background:var(--blue);color:white;display:grid;place-content:center;text-align:center;font-size:11px;font-weight:700;letter-spacing:1px;line-height:1.5;transform:rotate(12deg);box-shadow:0 10px 25px #315bea45}
+.about{background:#fff}
+.section-heading{max-width:600px;margin-bottom:38px}
+.section-heading h2,.contact h2,.skills h2{font-size:clamp(30px,4vw,43px);letter-spacing:-1.5px;margin:12px 0}
+.section-heading p,.contact-panel p{color:var(--muted);font-size:14px}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.about-card{border:1px solid var(--line);border-radius:17px;padding:30px;background:white}
+.about-main{background:var(--pale);border-color:transparent}
+.card-icon{display:grid;place-items:center;width:43px;height:43px;background:white;color:var(--blue);border-radius:12px;font-size:23px;margin-bottom:19px}
+.about-card h3{font-size:19px;margin-bottom:13px}
+.about-card p{font-size:13px;color:#66728a;margin-top:10px}
+.details-card h3{margin-bottom:21px}
+.detail-row{display:flex;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px solid var(--line);font-size:12px}
+.detail-row:last-child{border:0}.detail-row span{color:var(--muted)}.detail-row strong{text-align:right}
+.skills{background:#f7f9ff}
+.skills-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:75px;align-items:start}
+.skills h2{font-size:48px;margin:16px 0}
+.skills-lead{font-size:14px;color:var(--muted);max-width:340px}
+.interest-list{border-top:1px solid #dfe5f1}
+.interest-item{display:grid;grid-template-columns:42px 1fr 30px;gap:14px;align-items:start;padding:23px 0;border-bottom:1px solid #dfe5f1}
+.interest-number{font-size:11px;color:var(--blue);font-weight:700;padding-top:4px}
+.interest-item h3{font-size:16px;margin-bottom:6px}
+.interest-item p{font-size:12px;color:var(--muted);max-width:480px}
+.interest-symbol{font-size:22px;color:var(--blue);text-align:right}
+.contact{padding:90px 0}
+.contact-panel{background:#17233d;color:white;border-radius:22px;padding:48px 52px;display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;overflow:hidden;position:relative}
+.contact-panel:after{content:"";position:absolute;width:280px;height:280px;border:1px solid #ffffff15;border-radius:50%;right:35%;top:-190px;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff05}
+.contact h2{font-size:42px}.contact-panel p{color:#b9c3d7;max-width:350px}
+.contact-links{position:relative;z-index:1;display:grid;gap:10px}
+.contact-links a{display:flex;align-items:center;gap:13px;background:#ffffff0c;border:1px solid #ffffff14;padding:13px 15px;border-radius:11px;transition:.2s}
+.contact-links a:hover{background:#ffffff18;transform:translateX(3px)}
+.contact-icon{width:35px;height:35px;border-radius:9px;background:#ffffff16;display:grid;place-items:center;font-size:18px}
+.contact-links a>span:nth-child(2){display:grid;flex:1}
+.contact-links small{font-size:10px;color:#aebbd2}.contact-links strong{font-size:12px}.arrow{color:#9eb2ff}
+.footer{border-top:1px solid var(--line);padding:22px 0}
+.footer-inner{justify-content:space-between;gap:15px}
+.footer .brand{font-size:18px}.footer .brand-mark{width:27px;height:27px;font-size:14px}
+.footer p,.back-top{font-size:11px;color:var(--muted)}.back-top:hover{color:var(--blue)}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr;gap:20px}.hero-copy{order:1}.hero-visual{order:0;min-height:420px}.photo-frame{width:280px;height:365px}.photo-backdrop{width:330px;height:330px}.floating-card{left:5%}.circle-note{right:7%}.about-grid,.skills-grid,.contact-panel{grid-template-columns:1fr;gap:25px}.skills-grid{gap:35px}.contact-panel{padding:35px 27px}.section{padding:75px 0}}
+@media(max-width:600px){.site-header{height:68px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:white;padding:18px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:15px}.nav-links.open{display:flex}.hero{padding:48px 0 65px}.hero-visual{min-height:355px}.photo-frame{width:235px;height:310px}.photo-backdrop{width:280px;height:280px}.floating-card{bottom:15px;left:0;padding:10px}.circle-note{top:10px;right:0;width:68px;height:68px;font-size:9px}.intro{font-size:16px}h1{font-size:47px}.hero-meta{gap:18px;justify-content:space-between}.hero-meta strong{font-size:13px}.about-card{padding:23px}.detail-row{font-size:11px}.skills h2{font-size:40px}.contact h2{font-size:35px}.footer-inner{flex-wrap:wrap}.footer p{order:3;width:100%}}
